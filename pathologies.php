@@ -7,6 +7,7 @@
     <title>Pathologies</title>
 </head>
 <body>
+
    <header>
     Pathologies
    </header>

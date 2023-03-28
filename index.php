@@ -12,8 +12,8 @@
   <header id="headerBox">
     <nav id="navBox">
       <a href="#">Accueil</a>
-      <a href="pathologie.html">Pathologies</a>
-      <a href="#">Contact</a>
+      <a href="pathologies.php">Pathologies</a>
+      <a href="test.php">test</a>
     </nav>
     <h1>Acupuncture</h1>
     <!-- formulaire de connexion -->
