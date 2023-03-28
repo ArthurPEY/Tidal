@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pathologies</title>
 </head>
-<body>
+<body id="body">
    <header>
-    Pathologies
+    <h1 class="title">Pathologies</h1>
    </header>
    <section class="pathobox">
     <nav class="pathonav">
-        <input type="text" class="patho_sel" placeholder="Cherchez votre pathologie">
+        <input type="text" class="recherche" placeholder="Recherchez vos symptômes">
+        <select class="patho_meridien" >
+            <option value="default" selected>Toutes les pathologies</option>
+            <option value="meridien">Pathologies de méridien</option>
+            <option value="organe">Pathologies d'organe/viscères (tsang/fu)</option>
+            <option value="muscles">Pathologies des tendino-musculaires (jing jin)</option>
+            <option value="branches">Pathologies des branches (voies luo)</option>
+            <option value="vaisseaux">Pathologies des merveilleux vaisseaux</option>
+        </select>
+        <select class="patho_meridien">
+            <option value="default" selected>Toutes les pathologies</option>
+            <option value="meridien">Pathologies de méridien</option>
+            <option value="organe">Pathologies d'organe/viscères (tsang/fu)</option>
+            <option value="muscles">Pathologies des tendino-musculaires (jing jin)</option>
+            <option value="branches">Pathologies des branches (voies luo)</option>
+            <option value="vaisseaux">Pathologies des merveilleux vaisseaux</option>
+        </select>
         <select class="patho_meridien">
             <option value="default" selected>Toutes les pathologies</option>
             <option value="meridien">Pathologies de méridien</option>
@@ -22,6 +39,20 @@
             <option value="vaisseaux">Pathologies des merveilleux vaisseaux</option>
         </select>
     </nav>
+
    </section>
+   <div class="pathobeurre">
+        <h2 class="pathologie">Nom</h2>
+        <h3 class="symp">Symptômes</h3>
+        <p class="symptomes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis varius ante, non dapibus odio. Nunc pharetra ligula ullamcorper imperdiet tristique. Suspendisse eu nisl quis sem imperdiet scelerisque. In dictum commodo lorem id suscipit. Integer vitae sapien eget risus ornare lobortis. Duis gravida est vel nibh porta ornare. Donec hendrerit sem lectus, quis pharetra magna rutrum vitae. Nulla facilisi.
+
+            Nulla suscipit, leo eu viverra tincidunt, est erat consectetur magna, ut pretium lectus nisl molestie orci. Ut rutrum nibh ultricies euismod laoreet. Phasellus viverra condimentum dolor. In eu interdum nulla. Vestibulum sagittis felis quis neque semper, et hendrerit ligula tincidunt. Sed ut sapien sollicitudin, venenatis massa condimentum, rhoncus nulla. Nulla vitae magna congue, iaculis purus at, faucibus lacus. Mauris molestie leo quis libero finibus varius. Nunc non consequat massa.
+            
+            Phasellus vulputate tempor semper. Nulla elementum leo eget velit faucibus ultrices. Curabitur pretium nec nisl quis vehicula. Suspendisse dapibus semper odio eu malesuada. Integer id tincidunt nibh, elementum imperdiet purus. Vivamus rhoncus id felis nec auctor. Praesent ut tincidunt sapien, eget sollicitudin augue. Integer tempor lectus ac erat pulvinar, scelerisque gravida nisi semper. Donec porttitor, ipsum in accumsan commodo, libero quam elementum orci, eget aliquet justo mi ut arcu. Aenean a lacinia ex, a egestas nisi. Maecenas pharetra ex vitae neque finibus tristique. Ut neque ligula, suscipit in lacus id, suscipit porttitor eros. Vivamus finibus mauris convallis, ullamcorper odio at, porttitor ligula.
+            
+            Ut porta pellentesque velit, faucibus interdum orci consectetur at. Nullam est purus, consequat sed velit quis, eleifend pharetra enim. Integer elementum, arcu a facilisis eleifend, arcu mi dictum arcu, pharetra convallis metus metus eget metus. Fusce ac est a tortor euismod finibus. Quisque odio dui, vestibulum nec sem vel, vulputate consectetur orci. Etiam a tempus ligula. Sed feugiat velit dui, at pharetra nibh imperdiet ac. Integer neque augue, mattis sed lacus in, consequat posuere augue. Donec non velit enim. Maecenas venenatis et neque vitae malesuada. Duis diam ligula, sodales ut egestas ac, facilisis quis purus. Integer sollicitudin urna vitae dui pretium malesuada. Mauris a nunc dolor. Donec vitae iaculis eros. Vestibulum malesuada pellentesque dignissim. Mauris feugiat urna eu venenatis fringilla.
+            
+            Sed tortor purus, vulputate quis nibh a, elementum faucibus justo. Suspendisse accumsan felis ut diam sagittis, eget vehicula erat malesuada. Maecenas elementum vel nunc ut ultricies. Aenean consequat scelerisque dui quis egestas. Aliquam id ipsum mollis, fermentum est sed, lobortis nibh. Nulla facilisi. Nulla vel ipsum quis risus ultrices eleifend. Sed eu odio dolor. Integer eget turpis quis massa finibus maximus. Nullam finibus turpis eu rhoncus venenatis. Mauris et sapien egestas, hendrerit urna a, hendrerit dui. Praesent ac eros neque.</p>
+   </div>
 </body>
 </html>

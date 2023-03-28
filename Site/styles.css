@@ -96,3 +96,57 @@ display: block;
 margin-bottom: 10px;
 }
 
+
+/* styles pour les pathobeurres */
+#body {
+    background: #333;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.pathonav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pathobox {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.recherche {
+    width: 25%;
+}
+
+.patho_meridien {
+    width: 20%;
+
+}
+.pathobeurre {
+    display : 2rem;
+    display : block;
+    background: #333;
+    border : 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.pathologie {
+    margin-left: 10px;
+}
+
+.symp {
+    margin-left: 10px;
+}
+
+.symptomes {
+    margin-left: 10px;
+    margin-right: 10px;
+}
