@@ -37,6 +37,7 @@
 
 # Bonus :
 - Arthur a hébergé le site en ligne : http://acupuncturecpe.000webhostapp.com/route.php?page=index
+-> Utilisateur admin : username : "AdminCPE", mdp : "AdminCPE"
 
 # Ajout après évaluation :
 - Rien n'a été ajouté.
