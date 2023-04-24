@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathologies</title>
+</head>
+<body id="body">
+    {{ header }}
+   <section class="pathobox">
+   <form id="pathoform" method="post">
+        <input type="text" onkeyup="filterType()"  id="recherchebar" placeholder="Recherchez vos symptômes" {% if isConnected == true %} style = "display : '' "{% else %} style = "display : none "{% endif %}>
+        <select class="patho_type" id="type" method="post" name="typeChoice" onchange="filterType()">
+            {% for type in typeSet %}
+                <option {% if type == typeSelected %} selected {% endif %} value="{{ type }}"> {{ type }} </option>
+            {% endfor %}
+        </select>
+        <select class="patho_pathologie" id="pathologie" method="post" name="pathologieChoice" onchange="filterType()">
+            {% for pathologie in pathologieSet %}
+                <option value="{{ pathologie }}"> {{ pathologie }} </option>
+            {% endfor %}
+        </select>
+        <select class="patho_meridien" id="meridien" method="post" name="meridienChoice" onchange="filterType()">
+            {% for meridien in meridienSet %}
+                <option value="{{ meridien }}"> {{ meridien }} </option>
+            {% endfor %}
+        </select>
+    <form>
+    </section>
+    <div>
+        <table id="myTable">
+
+            <tbody>
+                    <tr class="header">
+                        <th>Type</th>
+                        <th>Pathologie</th>
+                        <th>Méridien</th>
+                        <th>Description</th>
+                    </tr>
+                {% for pat in data %}
+                    <tr>
+                        <td>{{ pat[0] }}</td>
+                        <td>{{ pat[1] }}</td>
+                        <td>{{ pat[2] }}</td>
+                        <td>{{ pat[3] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <div id="test"></div>
+
+</body>
+</html>
+   
+   
+   
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+</head>
+
+<body id="inscriptionbody">
+    {{ header }}
+
+    <h1 id = "inscriptionh1" >Formulaire d'inscription</h1>
+    <div class="incription-form ">
+    <form id = "inscriptionform" method="post">
+
+      <label for="username"> Nom d'utilisateur : </label>
+
+      <input class="inscriptioninput" type="text" id="username" name="username" required>
+      
+      <label for="email">Email:</label>
+      <input class="inscriptioninput"  type="email" id="email" name="email" required>
+      
+      <label for="password">Mot de passe :</label>
+      <input  class="inscription input" type="password" id="password" name="password" required>
+      
+      <label for="confirm-password">Confirmez mot de passe :</label>
+      <input class="inscriptioninput" type="password" id="confirm_password" name="confirm_password" required>
+      
+      <label for="dob">Date de naissance :</label>
+
+      <input class="inscriptioninput"  type="date" id="dob" name="dob" required>
+      
+     
+      <select id="selectgender" name="gender" required>
+        <option value="">Genre</option>
+        <option value="male">Homme</option>
+        <option value="female">Femme</option>
+        <option value="other">Autre</option>
+      </select>
+      
+      <input class="inscriptioninput" name = 'inscriptionsubmit' id ="inscriptionsubmit" type="submit" value="Valider">
+    </form>
+    <div>
+</body>
+
+</html>

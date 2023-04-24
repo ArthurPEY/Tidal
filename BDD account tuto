@@ -1,0 +1,46 @@
+Sur pgadmin, créer un nouvelle database et la nommer "accounts"
+(Click droit sur Databases -> Create -> Database)
+
+Cree la BDD :
+
+CREATE TABLE accounts (
+    id serial PRIMARY KEY NOT NULL,
+    "username" character varying(50) 
+        NOT NULL,
+    "password" character varying(50) 
+        NOT NULL,
+    "email" character varying(50) 
+        NOT NULL,
+    "dob" character varying(50) 
+        NOT NULL,
+    "gender" character varying(10) 
+        NOT NULL,
+    "token" character varying(255),
+    "isadmin" character varying(10) 
+);
+
+
+Ajouter user/mdp normaux
+
+INSERT INTO accounts (username,password,email,dob,gender) VALUES
+    ('user', 'mdp','admin@admin.fr','25/06/2001','Male')
+
+Ajouter user/mdp admin
+
+INSERT INTO accounts (username,password,email,dob,gender,token,isadmin) VALUES
+    ('root', 'root','admin@admin.fr','25/06/2001','Male',null,'true')
+
+Supprimer un utilisateur par username :
+
+DELETE FROM accounts
+    WHERE username='adminuser';
+
+Supprimer un utilisateur par Id :
+
+DELETE FROM accounts
+    WHERE id='numid';
+
+Update token utilisateur :
+
+UPDATE accounts SET token = 'TOKEN'
+    WHERE username LIKE 'adminuser';
