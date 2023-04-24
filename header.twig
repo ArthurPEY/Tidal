@@ -1,0 +1,17 @@
+<header id="headbox">
+  
+    <div id="navDiv">
+      <nav id="navBox">
+        <a href="route.php?page=index">Accueil</a>
+        <a href="route.php?page=pathologies">Pathologies</a>
+        {% if isAdmin == true %} <a href="route.php?page=paneladmin">Panel Admin</a> {% endif %}
+      </nav>
+      <h1>{{ Titre }}</h1>
+
+      <div class="loginform">
+        {{ msgConnexion|raw }}
+        {{ loginFile|raw }}
+      </div>
+    </div>
+</header> 
+
